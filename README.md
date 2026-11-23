@@ -36,7 +36,7 @@ Aplicación móvil para Android, hecha con **Flutter**, para descubrir **pelícu
 - Datos: primera y última emisión, temporadas, episodios, duración por episodio y estado.
 - Plataformas donde se emite, creadores, compañías e idiomas.
 
-## Efectos visuales y animaciones (diseño propio)
+## Efectos visuales y animaciones
 
 Además de lo visto en clase, la app tiene estos efectos. Todos están hechos solo con Flutter, sin paquetes extra:
 
@@ -87,7 +87,7 @@ El tema está centralizado en `lib/core/theme/` (colores, tipografías, espaciad
 | `font_awesome_flutter` | Paquete de íconos (instalado) |
 | `cupertino_icons` | Íconos de iOS (viene por defecto) |
 
-**Ícono de la app:** diseño propio (una TV dorada con un botón de play, con el color primario `#D5A15B`), que reemplaza al ícono por defecto de Flutter. Está en:
+**Ícono de la app:** diseño (una TV dorada con un botón de play, con el color dorado `#D5A15B`), que reemplaza al ícono por defecto de Flutter. Está en:
 - Android: `android/app/src/main/res/mipmap-*/ic_launcher.png` y el ícono adaptativo `mipmap-anydpi-v26/ic_launcher.xml` (con `ic_launcher_foreground.png` y el color de fondo en `values/ic_launcher_background.xml`).
 - Web: `web/favicon.png` y `web/icons/`.
 
@@ -157,7 +157,7 @@ lib/
     └── see_all/               # Pantalla "Ver todos" (lista completa en cuadrícula)
 ```
 
-## Guía rápida: ¿dónde cambio…?
+## Guía rápida: para modificar 
 
 | Quiero cambiar… | Archivo |
 |---|---|
@@ -181,7 +181,7 @@ lib/
 | La velocidad de las animaciones | `lib/core/widgets/effects/` (parámetro `duration` o `milliseconds`) |
 | Los mensajes de error | `lib/core/errors/api_exception.dart` |
 
-## Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto por si me olvido
 
 1. Crear una cuenta en [themoviedb.org](https://www.themoviedb.org) y obtener el **API Read Access Token**.
 2. Crear el archivo `.env` en la raíz del proyecto:
